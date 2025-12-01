@@ -219,14 +219,14 @@ export default function App() {
               <label className="text-sm font-medium">Upload Photo</label>
               <input type="file" accept="image/*"
                 onChange={(e) => setPhotoFile(e.target.files[0])}
-                className="mt-2 block w-full text-sm" />
+                className="mt-2 w-full p-2 rounded bg-gray-800 border border-gray-700" />
             </div>
 
             <div>
               <label className="text-sm font-medium">Watermark Image (optional)</label>
               <input type="file" accept="image/*"
                 onChange={(e) => setWmImageFile(e.target.files[0])}
-                className="mt-2 block w-full text-sm" />
+                className="mt-2 w-full p-2 rounded bg-gray-800 border border-gray-700" />
             </div>
 
             <div>
@@ -318,6 +318,21 @@ export default function App() {
           </div>
         </div>
       </div>
+      {/* FOOTER */}
+      <div className="text-center text-white-500 text-sm mt-10 pb-6">
+  Developed by 
+  <a 
+    href="#" 
+    className="text-blue-300 font-medium hover:text-white transition"
+  >
+    {" "}Naufal Abdullah
+  </a>
+  {" "}• Built with{" "}
+  <span className="text-blue-400 font-semibold hover:text-blue-300 transition">
+  ⚛️ React + 🌬️TailwindCSS
+  </span>
+</div>
     </div>
+    
   );
 }
